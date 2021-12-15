@@ -1,0 +1,18 @@
+{{ define "create" }}
+
+{{ template "header" }}
+
+<main class="px-3">
+  <h1 class="cover-heading">Формочка добавления твоей всякой херни</h1>
+  <form action="/save_article" method="post">
+    <input type="text" name="title" id="title" placeholder="Введи там че-нить какое-нить название"
+    class="form-control"><br>
+    <textarea name="anons" id="anons" class="form-control" placeholder="Тоже тут че-нить введи, мб ананос какой, ну я не знаю"></textarea><br>
+    <textarea name="full_text" id="full_text" class="form-control" placeholder="Тут какой-нить текстик начеркай"></textarea><br>
+    <button class="btn btn-warning">Тыкай шобы добавить</button>
+  </form>
+</main>
+
+{{ template "footer" }}
+
+{{ end }}
